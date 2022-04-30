@@ -14,11 +14,11 @@ const Task1 = () => {
     ])
 
   const cansList = [
-    {id: 1, order: 1, text: 'Plastic', img: require('../assets/cans/blue.PNG')},
-    {id: 2, order: 2, text: 'Paper', img: require('../assets/cans/green.PNG')},
-    {id: 3, order: 3, text: 'Glass', img: require('../assets/cans/yellow.PNG')},
-    {id: 4, order: 4, text: 'Metal', img: require('../assets/cans/red.PNG')},
-    {id: 5, order: 5, text: 'Food', img: require('../assets/cans/brown.PNG')},
+    {id: 1, order: 1, text: 'Plastic', img: require('./../assets/cans/blue.PNG')},
+    {id: 2, order: 2, text: 'Paper', img: require('./../assets/cans/green.PNG')},
+    {id: 3, order: 3, text: 'Glass', img: require('./../assets/cans/yellow.PNG')},
+    {id: 4, order: 4, text: 'Metal', img: require('./../assets/cans/red.PNG')},
+    {id: 5, order: 5, text: 'Food', img: require('./../assets/cans/brown.PNG')},
   ]
 
   const navigate = useNavigate()
@@ -117,7 +117,7 @@ const Task1 = () => {
         value={value} 
         text={text} 
         title={title} 
-        pic={require('../assets/thumb_up.PNG')}/>
+        pic={require('./../assets/thumb_up.PNG')}/>
       }
     </>
   )
