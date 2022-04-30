@@ -49439,17 +49439,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/cans/yellow.PNG":[function(require,module,exports) {
-module.exports = "/yellow.ca9563d4.PNG";
-},{}],"assets/cans/green.PNG":[function(require,module,exports) {
-module.exports = "/green.307f3ff2.PNG";
-},{}],"assets/cans/red.PNG":[function(require,module,exports) {
-module.exports = "/red.bcf37b53.PNG";
-},{}],"assets/cans/brown.PNG":[function(require,module,exports) {
-module.exports = "/brown.ec8637a4.PNG";
-},{}],"assets/cans/blue.PNG":[function(require,module,exports) {
-module.exports = "/blue.cc6109c4.PNG";
-},{}],"modals/myModal.css":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"modals/myModal.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -49500,9 +49490,7 @@ function Modal(_ref) {
 
 var _default = Modal;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/index.js","./myModal.css":"modals/myModal.css"}],"assets/thumb_up.PNG":[function(require,module,exports) {
-module.exports = "/thumb_up.5b00d921.PNG";
-},{}],"routes/consts.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/index.js","./myModal.css":"modals/myModal.css"}],"routes/consts.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49515,6 +49503,18 @@ const CHALLENGE_TWO = '/challengetwo';
 exports.CHALLENGE_TWO = CHALLENGE_TWO;
 const COMPLETED = 'completed';
 exports.COMPLETED = COMPLETED;
+},{}],"assets/cans/blue.PNG":[function(require,module,exports) {
+module.exports = "/blue.cc6109c4.PNG";
+},{}],"assets/cans/green.PNG":[function(require,module,exports) {
+module.exports = "/green.307f3ff2.PNG";
+},{}],"assets/cans/yellow.PNG":[function(require,module,exports) {
+module.exports = "/yellow.ca9563d4.PNG";
+},{}],"assets/cans/red.PNG":[function(require,module,exports) {
+module.exports = "/red.bcf37b53.PNG";
+},{}],"assets/cans/brown.PNG":[function(require,module,exports) {
+module.exports = "/brown.ec8637a4.PNG";
+},{}],"assets/thumb_up.PNG":[function(require,module,exports) {
+module.exports = "/thumb_up.5b00d921.PNG";
 },{}],"components/Task1.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -49527,19 +49527,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _task_ = _interopRequireDefault(require("./task_1.css"));
 
-var _yellow = _interopRequireDefault(require("../assets/cans/yellow.PNG"));
-
-var _green = _interopRequireDefault(require("../assets/cans/green.PNG"));
-
-var _red = _interopRequireDefault(require("../assets/cans/red.PNG"));
-
-var _brown = _interopRequireDefault(require("../assets/cans/brown.PNG"));
-
-var _blue = _interopRequireDefault(require("../assets/cans/blue.PNG"));
-
 var _MyModal = _interopRequireDefault(require("../modals/MyModal"));
-
-var _thumb_up = _interopRequireDefault(require("../assets/thumb_up.PNG"));
 
 var _consts = require("../routes/consts");
 
@@ -49577,27 +49565,27 @@ const Task1 = () => {
     id: 1,
     order: 1,
     text: 'Plastic',
-    img: _blue.default
+    img: require('../assets/cans/blue.PNG')
   }, {
     id: 2,
     order: 2,
     text: 'Paper',
-    img: _green.default
+    img: require('../assets/cans/green.PNG')
   }, {
     id: 3,
     order: 3,
     text: 'Glass',
-    img: _yellow.default
+    img: require('../assets/cans/yellow.PNG')
   }, {
     id: 4,
     order: 4,
     text: 'Metal',
-    img: _red.default
+    img: require('../assets/cans/red.PNG')
   }, {
     id: 5,
     order: 5,
     text: 'Food',
-    img: _brown.default
+    img: require('../assets/cans/brown.PNG')
   }];
   const navigate = (0, _reactRouterDom.useNavigate)();
 
@@ -49713,24 +49701,18 @@ const Task1 = () => {
     value: value,
     text: text,
     title: title,
-    pic: _thumb_up.default
+    pic: require('../assets/thumb_up.PNG')
   }));
 };
 
 var _default = Task1;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./task_1.css":"components/task_1.css","../assets/cans/yellow.PNG":"assets/cans/yellow.PNG","../assets/cans/green.PNG":"assets/cans/green.PNG","../assets/cans/red.PNG":"assets/cans/red.PNG","../assets/cans/brown.PNG":"assets/cans/brown.PNG","../assets/cans/blue.PNG":"assets/cans/blue.PNG","../modals/MyModal":"modals/MyModal.jsx","../assets/thumb_up.PNG":"assets/thumb_up.PNG","../routes/consts":"routes/consts.js","react-router-dom":"../node_modules/react-router-dom/index.js"}],"components/task_2.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./task_1.css":"components/task_1.css","../modals/MyModal":"modals/MyModal.jsx","../routes/consts":"routes/consts.js","react-router-dom":"../node_modules/react-router-dom/index.js","../assets/cans/blue.PNG":"assets/cans/blue.PNG","../assets/cans/green.PNG":"assets/cans/green.PNG","../assets/cans/yellow.PNG":"assets/cans/yellow.PNG","../assets/cans/red.PNG":"assets/cans/red.PNG","../assets/cans/brown.PNG":"assets/cans/brown.PNG","../assets/thumb_up.PNG":"assets/thumb_up.PNG"}],"components/task_2.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/recyclable.PNG":[function(require,module,exports) {
-module.exports = "/recyclable.3cfdb6d7.PNG";
-},{}],"assets/non_recyclable.PNG":[function(require,module,exports) {
-module.exports = "/non_recyclable.237c06b0.PNG";
-},{}],"assets/save_earth.PNG":[function(require,module,exports) {
-module.exports = "/save_earth.dcb4c8a9.PNG";
-},{}],"mint/mintingNFT.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"mint/mintingNFT.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49755,7 +49737,13 @@ const mintNFT = async () => {
 };
 
 exports.mintNFT = mintNFT;
-},{"bn.js":"../node_modules/bn.js/lib/bn.js"}],"components/Task2.jsx":[function(require,module,exports) {
+},{"bn.js":"../node_modules/bn.js/lib/bn.js"}],"assets/recyclable.PNG":[function(require,module,exports) {
+module.exports = "/recyclable.3cfdb6d7.PNG";
+},{}],"assets/non_recyclable.PNG":[function(require,module,exports) {
+module.exports = "/non_recyclable.237c06b0.PNG";
+},{}],"assets/save_earth.PNG":[function(require,module,exports) {
+module.exports = "/save_earth.dcb4c8a9.PNG";
+},{}],"components/Task2.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49768,12 +49756,6 @@ var _react = _interopRequireWildcard(require("react"));
 var _MyModal = _interopRequireDefault(require("../modals/MyModal"));
 
 var _task_ = _interopRequireDefault(require("./task_2.css"));
-
-var _recyclable = _interopRequireDefault(require("../assets/recyclable.PNG"));
-
-var _non_recyclable = _interopRequireDefault(require("../assets/non_recyclable.PNG"));
-
-var _save_earth = _interopRequireDefault(require("../assets/save_earth.PNG"));
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -49815,7 +49797,7 @@ const Task2 = () => {
   const [boards, setBoards] = (0, _react.useState)([{
     id: 1,
     title: 'Recyclable',
-    background: _recyclable.default,
+    background: require('../assets/recyclable.PNG'),
     items: [{
       id: 1,
       title: 'Apple'
@@ -49835,7 +49817,7 @@ const Task2 = () => {
   }, {
     id: 2,
     title: 'Non-recyclable',
-    background: _non_recyclable.default,
+    background: require('../assets/non_recyclable.PNG'),
     items: [{
       id: 6,
       title: 'Fish'
@@ -49977,13 +49959,13 @@ const Task2 = () => {
     value: value,
     text: text,
     title: title,
-    pic: _save_earth.default
+    pic: require('../assets/save_earth.PNG')
   }));
 };
 
 var _default = Task2;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../modals/MyModal":"modals/MyModal.jsx","./task_2.css":"components/task_2.css","../assets/recyclable.PNG":"assets/recyclable.PNG","../assets/non_recyclable.PNG":"assets/non_recyclable.PNG","../assets/save_earth.PNG":"assets/save_earth.PNG","react-router-dom":"../node_modules/react-router-dom/index.js","../mint/mintingNFT":"mint/mintingNFT.js"}],"assets/greeting.PNG":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../modals/MyModal":"modals/MyModal.jsx","./task_2.css":"components/task_2.css","react-router-dom":"../node_modules/react-router-dom/index.js","../mint/mintingNFT":"mint/mintingNFT.js","../assets/recyclable.PNG":"assets/recyclable.PNG","../assets/non_recyclable.PNG":"assets/non_recyclable.PNG","../assets/save_earth.PNG":"assets/save_earth.PNG"}],"assets/greeting.PNG":[function(require,module,exports) {
 module.exports = "/greeting.23ed23ce.PNG";
 },{}],"pages/WellcomePage.jsx":[function(require,module,exports) {
 "use strict";
@@ -49997,8 +49979,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _utils = require("../utils");
 
-var _greeting = _interopRequireDefault(require("../assets/greeting.PNG"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const WellcomePage = () => {
@@ -50010,7 +49990,7 @@ const WellcomePage = () => {
   }, /*#__PURE__*/_react.default.createElement("img", {
     height: 200,
     width: 200,
-    src: _greeting.default
+    src: require('../assets/greeting.PNG')
   }), /*#__PURE__*/_react.default.createElement("h2", null, "Make the world a better place with NEAR!"), /*#__PURE__*/_react.default.createElement("button", {
     onClick: _utils.login,
     style: {
@@ -50033,8 +50013,6 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _bye = _interopRequireDefault(require("../assets/bye.PNG"));
-
 var _utils = require("../utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -50043,7 +50021,7 @@ const Completed = () => {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, /*#__PURE__*/_react.default.createElement("img", {
     height: 200,
     width: 200,
-    src: _bye.default
+    src: require('../assets/bye.PNG')
   })), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       textAlign: 'center'
@@ -50059,7 +50037,7 @@ const Completed = () => {
 
 var _default = Completed;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../assets/bye.PNG":"assets/bye.PNG","../utils":"utils.js"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../utils":"utils.js","../assets/bye.PNG":"assets/bye.PNG"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50161,7 +50139,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58424" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51245" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
