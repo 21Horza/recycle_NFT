@@ -49439,7 +49439,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"modals/myModal.css":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/cans/yellow.png":[function(require,module,exports) {
+module.exports = "/yellow.d9d3ad02.png";
+},{}],"assets/cans/green.png":[function(require,module,exports) {
+module.exports = "/green.02d7bf9b.png";
+},{}],"assets/cans/red.png":[function(require,module,exports) {
+module.exports = "/red.30e2ef41.png";
+},{}],"assets/cans/brown.png":[function(require,module,exports) {
+module.exports = "/brown.161a5ea0.png";
+},{}],"assets/cans/blue.png":[function(require,module,exports) {
+module.exports = "/blue.3cc5dbc1.png";
+},{}],"modals/myModal.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -49490,7 +49500,9 @@ function Modal(_ref) {
 
 var _default = Modal;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/index.js","./myModal.css":"modals/myModal.css"}],"routes/consts.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/index.js","./myModal.css":"modals/myModal.css"}],"assets/thumb_up.png":[function(require,module,exports) {
+module.exports = "/thumb_up.55978a37.png";
+},{}],"routes/consts.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49503,18 +49515,6 @@ const CHALLENGE_TWO = '/challengetwo';
 exports.CHALLENGE_TWO = CHALLENGE_TWO;
 const COMPLETED = 'completed';
 exports.COMPLETED = COMPLETED;
-},{}],"assets/cans/blue.PNG":[function(require,module,exports) {
-module.exports = "/blue.cc6109c4.PNG";
-},{}],"assets/cans/green.PNG":[function(require,module,exports) {
-module.exports = "/green.307f3ff2.PNG";
-},{}],"assets/cans/yellow.PNG":[function(require,module,exports) {
-module.exports = "/yellow.ca9563d4.PNG";
-},{}],"assets/cans/red.PNG":[function(require,module,exports) {
-module.exports = "/red.bcf37b53.PNG";
-},{}],"assets/cans/brown.PNG":[function(require,module,exports) {
-module.exports = "/brown.ec8637a4.PNG";
-},{}],"assets/thumb_up.PNG":[function(require,module,exports) {
-module.exports = "/thumb_up.5b00d921.PNG";
 },{}],"components/Task1.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -49527,7 +49527,19 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _task_ = _interopRequireDefault(require("./task_1.css"));
 
+var _yellow = _interopRequireDefault(require("../assets/cans/yellow.png"));
+
+var _green = _interopRequireDefault(require("../assets/cans/green.png"));
+
+var _red = _interopRequireDefault(require("../assets/cans/red.png"));
+
+var _brown = _interopRequireDefault(require("../assets/cans/brown.png"));
+
+var _blue = _interopRequireDefault(require("../assets/cans/blue.png"));
+
 var _MyModal = _interopRequireDefault(require("../modals/MyModal"));
+
+var _thumb_up = _interopRequireDefault(require("../assets/thumb_up.png"));
 
 var _consts = require("../routes/consts");
 
@@ -49565,27 +49577,27 @@ const Task1 = () => {
     id: 1,
     order: 1,
     text: 'Plastic',
-    img: require('./../assets/cans/blue.PNG')
+    img: _blue.default
   }, {
     id: 2,
     order: 2,
     text: 'Paper',
-    img: require('./../assets/cans/green.PNG')
+    img: _green.default
   }, {
     id: 3,
     order: 3,
     text: 'Glass',
-    img: require('./../assets/cans/yellow.PNG')
+    img: _yellow.default
   }, {
     id: 4,
     order: 4,
     text: 'Metal',
-    img: require('./../assets/cans/red.PNG')
+    img: _red.default
   }, {
     id: 5,
     order: 5,
     text: 'Food',
-    img: require('./../assets/cans/brown.PNG')
+    img: _brown.default
   }];
   const navigate = (0, _reactRouterDom.useNavigate)();
 
@@ -49679,7 +49691,7 @@ const Task1 = () => {
   }, /*#__PURE__*/_react.default.createElement("img", {
     height: 300,
     width: 200,
-    src: can.img
+    src: `/recycle_NFT/${can.img}`
   })))), /*#__PURE__*/_react.default.createElement("div", {
     className: "cards"
   }, cardList.sort(sortCards).map(card => /*#__PURE__*/_react.default.createElement("div", {
@@ -49701,18 +49713,24 @@ const Task1 = () => {
     value: value,
     text: text,
     title: title,
-    pic: require('./../assets/thumb_up.PNG')
+    pic: _thumb_up.default
   }));
 };
 
 var _default = Task1;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./task_1.css":"components/task_1.css","../modals/MyModal":"modals/MyModal.jsx","../routes/consts":"routes/consts.js","react-router-dom":"../node_modules/react-router-dom/index.js","./../assets/cans/blue.PNG":"assets/cans/blue.PNG","./../assets/cans/green.PNG":"assets/cans/green.PNG","./../assets/cans/yellow.PNG":"assets/cans/yellow.PNG","./../assets/cans/red.PNG":"assets/cans/red.PNG","./../assets/cans/brown.PNG":"assets/cans/brown.PNG","./../assets/thumb_up.PNG":"assets/thumb_up.PNG"}],"components/task_2.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./task_1.css":"components/task_1.css","../assets/cans/yellow.png":"assets/cans/yellow.png","../assets/cans/green.png":"assets/cans/green.png","../assets/cans/red.png":"assets/cans/red.png","../assets/cans/brown.png":"assets/cans/brown.png","../assets/cans/blue.png":"assets/cans/blue.png","../modals/MyModal":"modals/MyModal.jsx","../assets/thumb_up.png":"assets/thumb_up.png","../routes/consts":"routes/consts.js","react-router-dom":"../node_modules/react-router-dom/index.js"}],"components/task_2.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"mint/mintingNFT.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/recyclable.png":[function(require,module,exports) {
+module.exports = "/recyclable.65e23ba2.png";
+},{}],"assets/non_recyclable.png":[function(require,module,exports) {
+module.exports = "/non_recyclable.2c4e7c58.png";
+},{}],"assets/save_earth.png":[function(require,module,exports) {
+module.exports = "/save_earth.46916053.png";
+},{}],"mint/mintingNFT.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49737,13 +49755,7 @@ const mintNFT = async () => {
 };
 
 exports.mintNFT = mintNFT;
-},{"bn.js":"../node_modules/bn.js/lib/bn.js"}],"assets/recyclable.PNG":[function(require,module,exports) {
-module.exports = "/recyclable.3cfdb6d7.PNG";
-},{}],"assets/non_recyclable.PNG":[function(require,module,exports) {
-module.exports = "/non_recyclable.237c06b0.PNG";
-},{}],"assets/save_earth.PNG":[function(require,module,exports) {
-module.exports = "/save_earth.dcb4c8a9.PNG";
-},{}],"components/Task2.jsx":[function(require,module,exports) {
+},{"bn.js":"../node_modules/bn.js/lib/bn.js"}],"components/Task2.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49756,6 +49768,12 @@ var _react = _interopRequireWildcard(require("react"));
 var _MyModal = _interopRequireDefault(require("../modals/MyModal"));
 
 var _task_ = _interopRequireDefault(require("./task_2.css"));
+
+var _recyclable = _interopRequireDefault(require("../assets/recyclable.png"));
+
+var _non_recyclable = _interopRequireDefault(require("../assets/non_recyclable.png"));
+
+var _save_earth = _interopRequireDefault(require("../assets/save_earth.png"));
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -49797,7 +49815,7 @@ const Task2 = () => {
   const [boards, setBoards] = (0, _react.useState)([{
     id: 1,
     title: 'Recyclable',
-    background: require('./../assets/recyclable.PNG'),
+    background: _recyclable.default,
     items: [{
       id: 1,
       title: 'Apple'
@@ -49817,7 +49835,7 @@ const Task2 = () => {
   }, {
     id: 2,
     title: 'Non-recyclable',
-    background: require('./../assets/non_recyclable.PNG'),
+    background: _non_recyclable.default,
     items: [{
       id: 6,
       title: 'Fish'
@@ -49959,14 +49977,14 @@ const Task2 = () => {
     value: value,
     text: text,
     title: title,
-    pic: require('./../assets/save_earth.PNG')
+    pic: _save_earth.default
   }));
 };
 
 var _default = Task2;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../modals/MyModal":"modals/MyModal.jsx","./task_2.css":"components/task_2.css","react-router-dom":"../node_modules/react-router-dom/index.js","../mint/mintingNFT":"mint/mintingNFT.js","./../assets/recyclable.PNG":"assets/recyclable.PNG","./../assets/non_recyclable.PNG":"assets/non_recyclable.PNG","./../assets/save_earth.PNG":"assets/save_earth.PNG"}],"assets/greeting.PNG":[function(require,module,exports) {
-module.exports = "/greeting.23ed23ce.PNG";
+},{"react":"../node_modules/react/index.js","../modals/MyModal":"modals/MyModal.jsx","./task_2.css":"components/task_2.css","../assets/recyclable.png":"assets/recyclable.png","../assets/non_recyclable.png":"assets/non_recyclable.png","../assets/save_earth.png":"assets/save_earth.png","react-router-dom":"../node_modules/react-router-dom/index.js","../mint/mintingNFT":"mint/mintingNFT.js"}],"assets/greeting.png":[function(require,module,exports) {
+module.exports = "/greeting.2232b38a.png";
 },{}],"pages/WellcomePage.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -49979,6 +49997,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _utils = require("../utils");
 
+var _greeting = _interopRequireDefault(require("../assets/greeting.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const WellcomePage = () => {
@@ -49990,7 +50010,7 @@ const WellcomePage = () => {
   }, /*#__PURE__*/_react.default.createElement("img", {
     height: 200,
     width: 200,
-    src: require('./../assets/greeting.PNG')
+    src: _greeting.default
   }), /*#__PURE__*/_react.default.createElement("h2", null, "Make the world a better place with NEAR!"), /*#__PURE__*/_react.default.createElement("button", {
     onClick: _utils.login,
     style: {
@@ -50001,8 +50021,8 @@ const WellcomePage = () => {
 
 var _default = WellcomePage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../utils":"utils.js","./../assets/greeting.PNG":"assets/greeting.PNG"}],"assets/bye.PNG":[function(require,module,exports) {
-module.exports = "/bye.2a413432.PNG";
+},{"react":"../node_modules/react/index.js","../utils":"utils.js","../assets/greeting.png":"assets/greeting.png"}],"assets/bye.png":[function(require,module,exports) {
+module.exports = "/bye.c4c06278.png";
 },{}],"pages/Completed.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -50013,6 +50033,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _bye = _interopRequireDefault(require("../assets/bye.png"));
+
 var _utils = require("../utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -50021,7 +50043,7 @@ const Completed = () => {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, /*#__PURE__*/_react.default.createElement("img", {
     height: 200,
     width: 200,
-    src: require('../assets/bye.PNG')
+    src: _bye.default
   })), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       textAlign: 'center'
@@ -50037,7 +50059,7 @@ const Completed = () => {
 
 var _default = Completed;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../utils":"utils.js","../assets/bye.PNG":"assets/bye.PNG"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/bye.png":"assets/bye.png","../utils":"utils.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50139,7 +50161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50559" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51895" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
