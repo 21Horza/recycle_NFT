@@ -49691,7 +49691,7 @@ const Task1 = () => {
   }, /*#__PURE__*/_react.default.createElement("img", {
     height: 300,
     width: 200,
-    src: `/recycle_NFT/${can.img}`
+    src: can.img
   })))), /*#__PURE__*/_react.default.createElement("div", {
     className: "cards"
   }, cardList.sort(sortCards).map(card => /*#__PURE__*/_react.default.createElement("div", {
@@ -50161,7 +50161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51895" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52428" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
