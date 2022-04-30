@@ -96,7 +96,7 @@ const Task1 = () => {
               <div
                 key={can.id}
                 className='can'>
-                <img height={300} width={200} src={can.img}></img>
+                <img height={300} width={200} src={`/${can.img}`} />
               </div>
               )}
         </div>
