@@ -49565,27 +49565,27 @@ const Task1 = () => {
     id: 1,
     order: 1,
     text: 'Plastic',
-    img: require('../assets/cans/blue.PNG')
+    img: require('./../assets/cans/blue.PNG')
   }, {
     id: 2,
     order: 2,
     text: 'Paper',
-    img: require('../assets/cans/green.PNG')
+    img: require('./../assets/cans/green.PNG')
   }, {
     id: 3,
     order: 3,
     text: 'Glass',
-    img: require('../assets/cans/yellow.PNG')
+    img: require('./../assets/cans/yellow.PNG')
   }, {
     id: 4,
     order: 4,
     text: 'Metal',
-    img: require('../assets/cans/red.PNG')
+    img: require('./../assets/cans/red.PNG')
   }, {
     id: 5,
     order: 5,
     text: 'Food',
-    img: require('../assets/cans/brown.PNG')
+    img: require('./../assets/cans/brown.PNG')
   }];
   const navigate = (0, _reactRouterDom.useNavigate)();
 
@@ -49701,13 +49701,13 @@ const Task1 = () => {
     value: value,
     text: text,
     title: title,
-    pic: require('../assets/thumb_up.PNG')
+    pic: require('./../assets/thumb_up.PNG')
   }));
 };
 
 var _default = Task1;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./task_1.css":"components/task_1.css","../modals/MyModal":"modals/MyModal.jsx","../routes/consts":"routes/consts.js","react-router-dom":"../node_modules/react-router-dom/index.js","../assets/cans/blue.PNG":"assets/cans/blue.PNG","../assets/cans/green.PNG":"assets/cans/green.PNG","../assets/cans/yellow.PNG":"assets/cans/yellow.PNG","../assets/cans/red.PNG":"assets/cans/red.PNG","../assets/cans/brown.PNG":"assets/cans/brown.PNG","../assets/thumb_up.PNG":"assets/thumb_up.PNG"}],"components/task_2.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./task_1.css":"components/task_1.css","../modals/MyModal":"modals/MyModal.jsx","../routes/consts":"routes/consts.js","react-router-dom":"../node_modules/react-router-dom/index.js","./../assets/cans/blue.PNG":"assets/cans/blue.PNG","./../assets/cans/green.PNG":"assets/cans/green.PNG","./../assets/cans/yellow.PNG":"assets/cans/yellow.PNG","./../assets/cans/red.PNG":"assets/cans/red.PNG","./../assets/cans/brown.PNG":"assets/cans/brown.PNG","./../assets/thumb_up.PNG":"assets/thumb_up.PNG"}],"components/task_2.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -49797,7 +49797,7 @@ const Task2 = () => {
   const [boards, setBoards] = (0, _react.useState)([{
     id: 1,
     title: 'Recyclable',
-    background: require('../assets/recyclable.PNG'),
+    background: require('./../assets/recyclable.PNG'),
     items: [{
       id: 1,
       title: 'Apple'
@@ -49817,7 +49817,7 @@ const Task2 = () => {
   }, {
     id: 2,
     title: 'Non-recyclable',
-    background: require('../assets/non_recyclable.PNG'),
+    background: require('./../assets/non_recyclable.PNG'),
     items: [{
       id: 6,
       title: 'Fish'
@@ -49959,13 +49959,13 @@ const Task2 = () => {
     value: value,
     text: text,
     title: title,
-    pic: require('../assets/save_earth.PNG')
+    pic: require('./../assets/save_earth.PNG')
   }));
 };
 
 var _default = Task2;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../modals/MyModal":"modals/MyModal.jsx","./task_2.css":"components/task_2.css","react-router-dom":"../node_modules/react-router-dom/index.js","../mint/mintingNFT":"mint/mintingNFT.js","../assets/recyclable.PNG":"assets/recyclable.PNG","../assets/non_recyclable.PNG":"assets/non_recyclable.PNG","../assets/save_earth.PNG":"assets/save_earth.PNG"}],"assets/greeting.PNG":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../modals/MyModal":"modals/MyModal.jsx","./task_2.css":"components/task_2.css","react-router-dom":"../node_modules/react-router-dom/index.js","../mint/mintingNFT":"mint/mintingNFT.js","./../assets/recyclable.PNG":"assets/recyclable.PNG","./../assets/non_recyclable.PNG":"assets/non_recyclable.PNG","./../assets/save_earth.PNG":"assets/save_earth.PNG"}],"assets/greeting.PNG":[function(require,module,exports) {
 module.exports = "/greeting.23ed23ce.PNG";
 },{}],"pages/WellcomePage.jsx":[function(require,module,exports) {
 "use strict";
@@ -49990,7 +49990,7 @@ const WellcomePage = () => {
   }, /*#__PURE__*/_react.default.createElement("img", {
     height: 200,
     width: 200,
-    src: require('../assets/greeting.PNG')
+    src: require('./../assets/greeting.PNG')
   }), /*#__PURE__*/_react.default.createElement("h2", null, "Make the world a better place with NEAR!"), /*#__PURE__*/_react.default.createElement("button", {
     onClick: _utils.login,
     style: {
@@ -50001,7 +50001,7 @@ const WellcomePage = () => {
 
 var _default = WellcomePage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../utils":"utils.js","../assets/greeting.PNG":"assets/greeting.PNG"}],"assets/bye.PNG":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../utils":"utils.js","./../assets/greeting.PNG":"assets/greeting.PNG"}],"assets/bye.PNG":[function(require,module,exports) {
 module.exports = "/bye.2a413432.PNG";
 },{}],"pages/Completed.jsx":[function(require,module,exports) {
 "use strict";
@@ -50139,7 +50139,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61913" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50559" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
