@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import styles from './task_1.css'
+import yellow_can from '../assets/cans/yellow.png'
+import green_can from '../assets/cans/green.png'
+import red_can from '../assets/cans/red.png'
+import brown_can from '../assets/cans/brown.png'
+import blue_can from '../assets/cans/blue.png'
 import MyModal from '../modals/MyModal'
+import thumb_up from '../assets/thumb_up.png'
 import { CHALLENGE_TWO } from '../routes/consts'
 import { useNavigate } from 'react-router-dom'
 
@@ -12,13 +18,13 @@ const Task1 = () => {
       {id: 4, order: 5, text: 'Metal'},
       {id: 5, order: 2, text: 'Paper'},
     ])
-
+    
   const cansList = [
-    {id: 1, order: 1, text: 'Plastic', img: require('./../assets/cans/blue.PNG')},
-    {id: 2, order: 2, text: 'Paper', img: require('./../assets/cans/green.PNG')},
-    {id: 3, order: 3, text: 'Glass', img: require('./../assets/cans/yellow.PNG')},
-    {id: 4, order: 4, text: 'Metal', img: require('./../assets/cans/red.PNG')},
-    {id: 5, order: 5, text: 'Food', img: require('./../assets/cans/brown.PNG')},
+    {id: 1, order: 1, text: 'Plastic', img: blue_can},
+    {id: 2, order: 2, text: 'Paper', img: green_can},
+    {id: 3, order: 3, text: 'Glass', img: yellow_can},
+    {id: 4, order: 4, text: 'Metal', img: red_can},
+    {id: 5, order: 5, text: 'Food', img: brown_can},
   ]
 
   const navigate = useNavigate()
@@ -117,7 +123,7 @@ const Task1 = () => {
         value={value} 
         text={text} 
         title={title} 
-        pic={require('./../assets/thumb_up.PNG')}/>
+        pic={thumb_up}/>
       }
     </>
   )

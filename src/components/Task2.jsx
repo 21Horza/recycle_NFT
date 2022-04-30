@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import MyModal from '../modals/MyModal'
 import styles from './task_2.css'
+import recyclable from '../assets/recyclable.png'
+import non_recyclable from '../assets/non_recyclable.png'
+import save_earth from '../assets/save_earth.png'
 import { useNavigate } from 'react-router-dom'
 import { mintNFT } from '../mint/mintingNFT'
 
@@ -38,8 +41,8 @@ const Task2 = () => {
   }
 
   const [boards, setBoards] = useState([
-    {id: 1, title: 'Recyclable', background: require('./../assets/recyclable.PNG'),  items: [{id: 1, title: 'Apple'}, {id: 2, title: 'Paper bags'}, {id: 3, title: 'Milk'}, {id: 4, title: 'Newspaper'}, {id: 5, title: 'Cans'}]},
-    {id: 2, title: 'Non-recyclable', background: require('./../assets/non_recyclable.PNG'), items:[{id: 6, title: 'Fish'}, {id: 7, title: 'Soap'}, {id: 8, title: 'Plastics'}, {id: 9, title: 'Drinking straw'}, {id: 10, title: 'Aluminium foil'}]},
+    {id: 1, title: 'Recyclable', background: recyclable,  items: [{id: 1, title: 'Apple'}, {id: 2, title: 'Paper bags'}, {id: 3, title: 'Milk'}, {id: 4, title: 'Newspaper'}, {id: 5, title: 'Cans'}]},
+    {id: 2, title: 'Non-recyclable', background: non_recyclable, items:[{id: 6, title: 'Fish'}, {id: 7, title: 'Soap'}, {id: 8, title: 'Plastics'}, {id: 9, title: 'Drinking straw'}, {id: 10, title: 'Aluminium foil'}]},
   ])
 
   const recyclableAnswer = ["Cans, Drinking straw, Newspaper, Paper bags, Plastics"]
@@ -163,7 +166,7 @@ const Task2 = () => {
         value={value} 
         text={text} 
         title={title} 
-        pic={require('./../assets/save_earth.PNG')}/>
+        pic={save_earth}/>
       }
     </>
   )
