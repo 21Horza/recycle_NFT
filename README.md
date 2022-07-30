@@ -1,24 +1,9 @@
-![GifSave](https://user-images.githubusercontent.com/81642088/181906518-6c8be7ff-34e9-49cf-83bd-5cb9d63bd0dc.gif)
-sorting-nft
+Save Planet NFT
 ==================
 
-This [React] app was initialized with [create-near-app]
+The small quizz game that is built to let users know more about how to protect the environment. Try out and mint your NFT for the test NEAR account.
 
-
-Quick Start
 ===========
-
-To run this project locally:
-
-1. Prerequisites: Make sure you've installed [Node.js] ≥ 12
-2. Install dependencies: `yarn install`
-3. Run the local development server: `yarn dev` (see `package.json` for a
-   full list of `scripts` you can run with `yarn`)
-
-Now you'll have a local development environment backed by the NEAR TestNet!
-
-Go ahead and play with the app and the code. As you make code changes, the app will automatically reload.
-
 
 Exploring The Code
 ==================
@@ -34,70 +19,20 @@ Exploring The Code
    run test`.
 
 
-Deploy
+How to play
 ======
 
-Every smart contract in NEAR has its [own associated account][NEAR accounts]. When you run `yarn dev`, your smart contract gets deployed to the live NEAR TestNet with a throwaway account. When you're ready to make it permanent, here's how.
+1. Create a testnet account here: https://wallet.testnet.near.org/ or login.
+ <img width="882" alt="1" src="https://user-images.githubusercontent.com/81642088/181906661-3f5794c0-910a-4856-96d2-2b39afcb4022.png">
 
+2. Complete the first challenge
+ <img width="1243" alt="2" src="https://user-images.githubusercontent.com/81642088/181906666-204ef8fe-e4fd-44f3-b0c4-e2645f34af32.png">
 
-Step 0: Install near-cli (optional)
--------------------------------------
+3. Make sure you complete the second challenge as well
+ <img width="1122" alt="3" src="https://user-images.githubusercontent.com/81642088/181906687-fc4db78b-c35f-44eb-9e11-8ff7f61186fe.png">
 
-[near-cli] is a command line interface (CLI) for interacting with the NEAR blockchain. It was installed to the local `node_modules` folder when you ran `yarn install`, but for best ergonomics you may want to install it globally:
+4. Click MINT button and you will be redirected to mint your NFT
+ <img width="485" alt="4" src="https://user-images.githubusercontent.com/81642088/181906778-d1c3aa49-dc80-4ff7-8016-211f224441d8.png">
 
-    yarn install --global near-cli
-
-Or, if you'd rather use the locally-installed version, you can prefix all `near` commands with `npx`
-
-Ensure that it's installed with `near --version` (or `npx near --version`)
-
-
-Step 1: Create an account for the contract
-------------------------------------------
-
-Each account on NEAR can have at most one contract deployed to it. If you've already created an account such as `your-name.testnet`, you can deploy your contract to `sorting-nft.your-name.testnet`. Assuming you've already created an account on [NEAR Wallet], here's how to create `sorting-nft.your-name.testnet`:
-
-1. Authorize NEAR CLI, following the commands it gives you:
-
-      near login
-
-2. Create a subaccount (replace `YOUR-NAME` below with your actual account name):
-
-      near create-account sorting-nft.YOUR-NAME.testnet --masterAccount YOUR-NAME.testnet
-
-
-Step 2: set contract name in code
----------------------------------
-
-Modify the line in `src/config.js` that sets the account name of the contract. Set it to the account id you used above.
-
-    const CONTRACT_NAME = process.env.CONTRACT_NAME || 'sorting-nft.YOUR-NAME.testnet'
-
-
-Step 3: deploy!
----------------
-
-One command:
-
-    yarn deploy
-
-As you can see in `package.json`, this does two things:
-
-1. builds & deploys smart contract to NEAR TestNet
-2. builds & deploys frontend code to GitHub using [gh-pages]. This will only work if the project already has a repository set up on GitHub. Feel free to modify the `deploy` script in `package.json` to deploy elsewhere.
-
-
-Troubleshooting
-===============
-
-On Windows, if you're seeing an error containing `EPERM` it may be related to spaces in your path. Please see [this issue](https://github.com/zkat/npx/issues/209) for more details.
-
-
-  [React]: https://reactjs.org/
-  [create-near-app]: https://github.com/near/create-near-app
-  [Node.js]: https://nodejs.org/en/download/package-manager/
-  [jest]: https://jestjs.io/
-  [NEAR accounts]: https://docs.near.org/docs/concepts/account
-  [NEAR Wallet]: https://wallet.testnet.near.org/
-  [near-cli]: https://github.com/near/near-cli
-  [gh-pages]: https://github.com/tschaub/gh-pages
+5. Check your collectibles to see the NFT:
+6. ![GifSave](https://user-images.githubusercontent.com/81642088/181906804-35840fc9-029e-4063-9808-4ee820102e88.gif)
