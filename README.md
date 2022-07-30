@@ -2,7 +2,7 @@ Save Planet NFT
 ==================
 
 The small quizz game that is built to let users know more about how to protect the environment. Try out and mint your NFT for the test NEAR account.
-
+Demo is available at: https://21horza.github.io/recycle_NFT/
 ===========
 
 Exploring The Code
