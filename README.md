@@ -35,4 +35,4 @@ How to play
  <img width="485" alt="4" src="https://user-images.githubusercontent.com/81642088/181906778-d1c3aa49-dc80-4ff7-8016-211f224441d8.png">
 
 5. Check your collectibles to see the NFT:
-6. ![GifSave](https://user-images.githubusercontent.com/81642088/181906804-35840fc9-029e-4063-9808-4ee820102e88.gif)
+ ![GifSave](https://user-images.githubusercontent.com/81642088/181906804-35840fc9-029e-4063-9808-4ee820102e88.gif)
